@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 
+body {
+  font-family: 'Oswald', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
 .scrum-card {
   position: relative;
-  font-family: 'Oswald', sans-serif;
   font-size: 10em;
   border: 1px #000 solid;
   border-radius: 10px;
@@ -13,4 +18,32 @@
   line-height: 300px;
   white-space: nowrap;
   text-align: center;
+}
+
+.selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transition: opacity 0.35s;
+}
+
+.selector.hidden {
+  opacity: 0;
+}
+
+.selector.hidden .option {
+  transform: translateY(50px);
+}
+
+.selector .option {
+  transition: transform 0.35s;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.selector .option:active {
+  background: #eee;
 }

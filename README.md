@@ -1,1 +1,1 @@
-Copied from https://codepen.io/Craven/pen/xFgfv
+Simple scrum poker "app". HTML implementation.

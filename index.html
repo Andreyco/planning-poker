@@ -9,38 +9,16 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <!-- Planning Poker for Scrum -->
-    <div data-role="page" data-theme="a">
-      <div data-role="header" data-position="inline">
-        <h1>Planning Poker</h1>
-      </div>
-      <div data-role="content" data-theme="a">
-        <div class="scrum-card"><span>0</span></div>
-        <label for="select-choice-a" class="select">Select card value:</label>
-        <select
-          name="select-choice-a"
-          id="select-choice-a"
-          data-native-menu="false"
-        >
-          <option>Select Value</option>
-          <option value="0">0</option>
-          <option value="½">½</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="5">5</option>
-          <option value="8">8</option>
-          <option value="13">13</option>
-          <option value="20">20</option>
-          <option value="40">40</option>
-          <option value="99">99</option>
-        </select>
-      </div>
+    <div class="scrum-card"><span>0</span></div>
+    <div class="selector hiddene">
+      <div class="option" data-value="0">0</div>
+      <div class="option" data-value="½">½</div>
+      <div class="option" data-value="1">1</div>
+      <div class="option" data-value="2">2</div>
+      <div class="option" data-value="3">3</div>
+      <div class="option" data-value="5">5</div>
+      <div class="option" data-value="8">8</div>
+      <div class="option" data-value="13">13</div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
